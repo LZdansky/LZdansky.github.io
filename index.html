@@ -124,6 +124,10 @@
     max-width: stretch;
   }
 
+  .video {
+    max-width: stretch;
+  }
+
   /* Once you have real images, replace the placeholder div
      with: <img src="your-screenshot.jpg" alt="Project name"> */
 
@@ -168,7 +172,17 @@
       <div class="portfolio-item">Screenshot 3</div>
       <div class="portfolio-item">Screenshot 4</div>
       <div class="portfolio-item">Screenshot 5</div>
-      <div class="portfolio-item">Screenshot 6</div>
+      <video
+        controls
+        class="video"
+        loading="lazy"
+      >
+        <source src="https://github.com/LZdansky/LZdansky.github.io/blob/master/2019-12-23%20op1922-localhost%20docker%20new%20colors.mp4" />
+        <p>
+        Your browser doesn't support HTML video. Here is a
+        <a href="https://github.com/LZdansky/LZdansky.github.io/blob/master/2019-12-23%20op1922-localhost%20docker%20new%20colors.mp4">link to the video</a> instead.
+        </p>
+      </video>
     </section>
   </main>
 
