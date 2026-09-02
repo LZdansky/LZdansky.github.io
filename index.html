@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lily Zdansky de Cardoza's Portfolio</title>
-<h2>Who is she?</h2>
 <style>
   :root {
     --bg: #ffffff;
@@ -94,11 +93,10 @@
 
   .intro {
     margin-bottom: 40px;
-  }
-
-  .intro p {
+    p {
     color: var(--muted);
-    max-width: 60ch;
+    max-width: 75ch;
+    }
   }
 
   .portfolio-grid {
@@ -122,6 +120,13 @@
 
   .portfolio-img {
     max-width: stretch;
+    /* This is used to control the animation speed and its duration */
+    transition: transform .2s;
+
+    /* This property is used to change the properties of the image on hover */
+    img:hover{
+    transform: scale(2.5);
+    }
   }
 
   .video {
